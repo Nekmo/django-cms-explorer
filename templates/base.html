@@ -39,7 +39,8 @@
                 {% render_model_block request.current_page "changelist" %}
                 {% with dropdown="true" %}
                 <ul class="nav navbar-nav">
-                    {% show_menu 0 0 0 0 "includes/menu/navigation.html" %}
+                    {#  {% show_menu 0 0 0 0 "includes/menu/navigation.html" %} #}
+                    {% show_menu 0 100 100 100 "includes/menu/navigation.html" %}
                     <li class="divider" role="presentation"><span class="sr-only">{% trans "Separator" %}</span></li>
                     {% show_menu_below_id "meta" 0 0 0 0 "includes/menu/navigation.html" %}
                     {% language_chooser "includes/menu/langnav.html" "native" %}
