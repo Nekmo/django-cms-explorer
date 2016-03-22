@@ -1,0 +1,23 @@
+@import "../settings/bootstrap";
+
+// Estilo de los botones de login
+header:not(.navbar-head-narrow) #navigation {
+    .login a, .register a {
+        padding-right: 0;
+        padding-top: $navbar-padding-vertical - $padding-small-vertical;
+        padding-bottom: $navbar-padding-vertical - $padding-small-vertical;
+    }
+}
+
+header.navbar-head-narrow {
+    #navigation {
+        .login a, .register a {
+            padding-right: 0;
+
+            button.btn {
+                padding: 0 ($padding-small-horizontal / 2);
+                font-weight: 300;
+            }
+        }
+    }
+}
